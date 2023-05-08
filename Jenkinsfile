@@ -4,7 +4,7 @@ pipeline {
     stage('maven install') {
       steps {
 
-        mvn clean install
+       PowerShell("mvn clean install")  
 
       }
     }
